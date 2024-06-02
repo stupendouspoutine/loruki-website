@@ -7,95 +7,104 @@
 }
 
 .card {
-    background: #fff;
-    border: 0;
+    background-color: #fff;
+    color: #333;
     border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Text size */
-.sm {
-    font-size: 1rem;
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
 }
 
-.md {
-    font-size: 1.5rem;
-}
-
-.lg {
-    font-size: 2rem;
-}
-
-.xl {
-    font-size: 4rem;
-}
-
-.lead {
-    font-size: 20px;
-}
-
-.text-center {
-    text-align: center
-}
-
-.text-secondary {
-    color: var(--secondary-color);
-}
-
-.alert {
-    background: var(--light-color);
+/* Alert */
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
     padding: 10px 20px;
     font-weight: bold;
     margin: 15px 0;
-}
-
-.alert-success {
-    background: var(--alert-success);
-    color: #fff;
 }
 
 .alert i {
     margin-right: 10px;
 }
 
-/* Backgrounds & buttons */
-.bg-primary {
-    background-color: #047aed;
+/* Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+    background: var(--primary-color);
     color: #fff;
 }
 
-.bg-dark {
-    background-color: var(--dark-color);
+.bg-secondary,
+.btn-secondary {
+    background: var(--secondary-color);
     color: #fff;
 }
 
-.bg-light {
-    background-color: var(--light-color);
-}
-
-.btn {
-    background-color: var(--primary-color);
-    padding: 10px 30px;
-    border: 0;
-    border-radius: 5px;
-    color: #fff;
-    display: inline-block;
-    cursor: pointer;
-}
-
+.bg-dark,
 .btn-dark {
-    background-color: var(--dark-color);
+    background: var(--dark-color);
     color: #fff;
+}
+
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+}
+
+.bg-light,
+.btn-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+/* Text colors */
+.text-primary {
+    color: var(--primary-color);
+}
+
+/* Text sizes */
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
+.btn-outline {
+    border: 1px solid #fff;
+    background-color: transparent;
 }
 
 .btn:hover {
     transform: scale(0.98);
 }
 
-.btn-outline {
-    border: #fff 1px solid;
+.text-center {
+    text-align: center;
 }
 
 .flex {
@@ -119,6 +128,7 @@
 }
 
 /* Margin */
+
 .my-1 {
     margin: 1rem 0;
 }
@@ -136,7 +146,7 @@
 }
 
 .my-5 {
-    margin: 5rem 0;
+    margin: 4rem 0;
 }
 
 .m-1 {
@@ -156,10 +166,11 @@
 }
 
 .m-5 {
-    margin: 5rem;
+    margin: 4rem;
 }
 
 /* Padding */
+
 .py-1 {
     padding: 1rem 0;
 }
@@ -177,7 +188,7 @@
 }
 
 .py-5 {
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 .p-1 {
@@ -197,5 +208,5 @@
 }
 
 .p-5 {
-    padding: 5rem;
+    padding: 4rem;
 }
